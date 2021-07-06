@@ -1,0 +1,87 @@
+// 같은 강사님의 자바 스크립트 강의를 들었음으로 처음 배우는 부분만 필기하려 한다. 
+
+variabe vs constant
+x = 1;
+1 = 2;
+
+//프로그래밍을 공부할 때는 항상 극단적으로 생각하기. 
+
+//Css
+<body style="background-color: black; color: white;">
+
+//김버그님의 강의에 따르면 style태그를 이용하지않고 style.css라는 파일을 만들어 불러왔기에 
+들어만 본 부분이었다.
+
+//Span과 Div는 모두 어떠한 특정 기능이 있는 태그는 아니다.
+-> CSS나 JavaScript 코드를 삽입하기 위하여 존재하는 태그이다. 
+
+<head>
+ <style>
+  .js{      //선택자를 통해 여러개의 tag를 선택할 수 있다.
+    font-weight: bold;
+  }
+ </style>
+</head>
+
+
+
+//Class와 Id의 차이점 
+
+Class라는 단어는 그룹을 의미하고, id(identity)는 특정한 것을 식별한다는 의미를 가지고 있다.
+class선택자는 같은 스타일이 지정될 그룹을 의미, id는 특정 태그를 지정하여 스타일을 적용, 
+->class는 중복될 수 있지만 id는 한페이지에서는 딱 한번만 씌이게 된다.
+
+Class -> . -> 그룹핑
+Id -> # -> 식별
+
+
+//Class와 Id, 그리고 span(태그 ex) div, span)의 우선순위 = 선택자들의 우선순위.
+
+id > class > span(태그)
+ 
+//모두 중복해서 적을 수 있다. 
+
+
+** 제어할 태그 선택하기 
+
+<input type = "button" value = "night"
+onclick= "document.querySelector('body').style.backgroundColor = 'black';
+onclick= "document.querySelector('body').style.Color = 'white';
+">
+
+<input type = "button" value = "day"
+onclick= "document.querySelector('body').style.backgroundColor = 'white';
+onclick= "document.querySelector('body').style.Color = 'black';
+">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
