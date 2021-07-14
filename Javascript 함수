@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,9 +32,59 @@
         function sum(left, right){  //reft, right 매개변수 parameter
             document.write(left + right + '<br>');
         }
+        function sumColorRed(left, right){  
+            document.write('<div style = "color: red">'+left+ right+'</div><br>');
+        }
         sum(2,3); //5 -> 함수로 전달하는 값을 바로 인자라고 한다. argument
+        sumColorRed(2,3)
         sum(3,4); //7
     </script>
+    <h2>Returns</h2>
+    <script>
+        function sum2(left, right){
+            return left + right
+        }
+        document.write(sum(2,3)+'<br>')
+        document.write('<div style = "color: red">'+left+ right+'</div><br>');
+        document.write('<div style = "font-size: 3erm;">'+left+ right+'</div><br>');
+        </script>
+</body>
+</html>
+
+//함수의 활용 on
+
+function nightDayHandler(){
+var target = document.querySelector('body');
+if(this.value === 'night'){
+    target.style.backgroundcolor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+    
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+    }
+} else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+  
+  var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+    }
+  }
+}
+
+
+
+    
+    
+    
     <h2>Returns</h2>
 </body>
 </html>
